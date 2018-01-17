@@ -1,2 +1,2 @@
 # Python
-Learn python
+Learn python now
