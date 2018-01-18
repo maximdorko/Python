@@ -20,9 +20,10 @@ b = 2
 b<<=1
 print(a,b)
 print(a is not 3)
-'''
+
 a = "Maxim is an idiot"
 print("Niki" in a)
 
 servicesTeam = ["Maxim","Szabi","Zsolt"]
-print("Andris" in servicesTeam)
+print("Maxim" in servicesTeam)
+'''
