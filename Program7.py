@@ -76,8 +76,8 @@ myTuple = myTuple + (13, 15, 21) # Items added to the Tuple
 print("Items in the Tupple: ", myTuple)
 print("5 in Tuple? ", 5 in myTuple) # Gives True is 5 is in the Tuple
 for i in myTuple:
-    print(i)        
-aList = [22, 554,23] # Defines a list
+    print(i)
+aList = [22, 554, 23] # Defines a list
 aTuple = tuple(aList) # Converts a list into a tuple
 aList = list(aTuple) # Coverts a tuple into a list
 print("Min value in the Tuple: ", min(myTuple)) # Gives the minimum value in the tuple

@@ -67,26 +67,28 @@ print("Is 3.14 a number? ", isfloat(aNumber3))
 # ord(yourletter) to get unicode
 # chr(yourletter) to get letter from unicode
 
-def encryptchar(letter, letterShift):
-    letterUnicode = ord(letter) + letterShift
+
+def encrypt_char(letter, letterShift):
+    """Shift the string character Unicode by letterShift value"""
+    letter_unicode = ord(letter) + letterShift
     if letter.isupper():
-        if letterUnicode > 90:
-            letterUnicode -= 26
-        elif letterUnicode < 65:
-            letterUnicode += 26
+        if letter_unicode > 90:
+            letter_unicode -= 26
+        elif letter_unicode < 65:
+            letter_unicode += 26
     else:
-        if letterUnicode > 122:
-            letterUnicode -= 26
-        elif letterUnicode < 97:
-            letterUnicode += 26
-    return chr(letterUnicode)
+        if letter_unicode > 122:
+            letter_unicode -= 26
+        elif letter_unicode < 97:
+            letter_unicode += 26
+    return chr(letter_unicode)
 
 userSentence = input("Please enter you sentence: ")
 numberToShift = int(input("Number of shift: "))
 secretString = ""
 for i in userSentence:
     if i.isalpha():
-        secretString += encryptchar(i,numberToShift)
+        secretString += encrypt_char(i, numberToShift)
     else:
         secretString += i
 print("Original String was: ", userSentence)
@@ -94,24 +96,7 @@ print("The encrypted string is: ", secretString)
 decryptedString = ""
 for i in secretString:
     if i.isalpha():
-        decryptedString += encryptchar(i,numberToShift*-1)
+        decryptedString += encrypt_char(i, numberToShift*-1)
     else:
         decryptedString += i
 print("Decrypted string is: ", decryptedString)
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
