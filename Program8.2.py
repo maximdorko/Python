@@ -29,13 +29,13 @@ class Warriors:
         return
 
 warrior_1 = Warriors(input("Warrior name: "), 
-            int(input("Health: ")), 
-            int(input("Attack: ")),
-            int(input("Block: ")))
+                     int(input("Health: ")), 
+                     int(input("Attack: ")),
+                     int(input("Block: ")))
 warrior_2 = Warriors(input("Warrior name: "), 
-            int(input("Health: ")), 
-            int(input("Attack: ")),
-            int(input("Block: ")))
+                     int(input("Health: ")), 
+                     int(input("Attack: ")),
+                     int(input("Block: ")))
 attacking_warrior = 1
 print("The match starts")
 while True:
@@ -53,9 +53,3 @@ while True:
         attacking_warrior = 2
     else:
         attacking_warrior = 1
-
-        
-
-
-
-
